@@ -1,4 +1,8 @@
+[![Build Status](https://travis-ci.org/cassidyjames/principles.svg?branch=master)](https://travis-ci.org/cassidyjames/principles)
+
 # Principles
+
+![Screenshot](data/screenshot.png)
 
 Remember Dieter Rams' ten principles of good design. According to Rams, good design:
 

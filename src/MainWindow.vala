@@ -40,7 +40,7 @@ public class MainWindow : Gtk.Window {
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
-            icon_name: "com.github.cassidyjames.palette",
+            icon_name: "com.github.cassidyjames.principles",
             resizable: false,
             title: _("Principles"),
             window_position: Gtk.WindowPosition.CENTER
