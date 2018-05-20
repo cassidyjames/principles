@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2018 cassidyjames <{{email}}> -->
+<!-- Copyright 2018 Cassidy James Blaede <c@ssidyjam.es> -->
 <component type="desktop">
-  <id>com.github.cassidyjames.principles</id>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_group>cassidyjames</project_group>
+  <id>com.github.cassidyjames.principles.desktop</id>
+  <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <name></name>
-  <summary></summary>
-  <description></description>
-  <releases>
-    <release version="0.0.1" date="2018-05-05"/>
-  </releases>
+  <name>Principles</name>
+  <summary>Remember Dieter Rams' ten principles of good design</summary>
+  <description>
+    <p>According to Dieter Rams, good design is innovative, makes a product useful, is aesthetic, makes a product understandable, is unobtrusive, is honest, is long-lasting, is thorough down to the last detail, is environmentally-friendly, and is as little design as possible.</p>
+    <p>Get a simple reminder of one of these principles each time you open the app.</p>
+  </description>
   <provides>
     <binary>com.github.cassidyjames.principles</binary>
   </provides>
+  ​<releases>
+    <release version="1.0.0" date="2018-05-20">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -43,13 +54,13 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-  <developer_name>cassidyjames</developer_name>
-  <url type="homepage">https://cassidyjames.com</url>
-  <url type="bugtracker">http://github.com/cassidyjames/Principles/issues</url>
-  <url type="help">https://elementaryos.stackexchange.com/questions/tagged/cassidyjames</url>
-  <update_contact>c_AT_ssidyjam.es</update_contact>
-  <screenshots>
-    <screenshot type="default">
-    </screenshot>
-  </screenshots>
+  <developer_name>Cassidy James Blaede</developer_name>
+  <url type="homepage">https://github.com/cassidyjames/principles</url>
+  <url type="bugtracker">https://github.com/cassidyjames/principles/issues</url>
+  <custom>
+    <value key="x-appcenter-color-primary">#fff</value>
+    <value key="x-appcenter-color-primary-text">#000</value>
+    <value key="x-appcenter-suggested-price">1</value>
+  </custom>
 </component>
+

@@ -1,10 +1,10 @@
 /*
-* Copyright (c) {{yearrange}} cassidyjames (https://cassidyjames.com)
+* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
 * License as published by the Free Software Foundation; either
-* version 2 of the License, or (at your option) any later version.
+* version 3 of the License, or (at your option) any later version.
 *
 * This program is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -16,35 +16,40 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: cassidyjames <https://cassidyjames.com>
+* Authored by: Cassidy James Blaede <c@ssidyjam.es>
 */
-using Granite;
-using Granite.Widgets;
-using Gtk;
 
-namespace Principles {
-    public class Application : Granite.Application {
+public class Principles : Gtk.Application {
+    public Principles () {
+        Object (application_id: "com.github.cassidyjames.principles",
+        flags: ApplicationFlags.FLAGS_NONE);
+    }
 
-        public Application () {
-            Object(
-                application_id: "com.github.cassidyjames.principles", 
-                flags: ApplicationFlags.FLAGS_NONE
-            );
+    protected override void activate () {
+        if (get_windows ().length () > 0) {
+            get_windows ().data.present ();
+            return;
         }
 
-        protected override void activate () {
-            var window = new Gtk.ApplicationWindow (this);
-            var main = new Gtk.Grid ();
+        var app_window = new MainWindow (this);
+        app_window.show_all ();
 
-            window.title = "Principles";
-            window.set_default_size (900, 640);
-            window.add (main);
-            window.show_all ();
-        }
+        var quit_action = new SimpleAction ("quit", null);
 
-        public static int main (string[] args) {
-            var app = new Principles.Application ();
-            return app.run (args);
-        }
+        add_action (quit_action);
+        set_accels_for_action ("app.quit", {"Escape"});
+
+        quit_action.activate.connect (() => {
+            if (app_window != null) {
+                app_window.destroy ();
+            }
+        });
+    }
+
+    private static int main (string[] args) {
+        Gtk.init (ref args);
+
+        var app = new Principles ();
+        return app.run (args);
     }
 }
