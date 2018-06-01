@@ -31,6 +31,11 @@ public class MainWindow : Gtk.Window {
             text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75);
         }
 
+        .cassidyjames-principles.dark {
+            color: white;
+            text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.75);
+        }
+
         .cassidyjames-principles:backdrop {
             background: transparent;
         }
@@ -65,6 +70,7 @@ public class MainWindow : Gtk.Window {
             application: application,
             icon_name: "com.github.cassidyjames.principles",
             resizable: false,
+            skip_taskbar_hint: true,
             title: _("Principles"),
             window_position: Gtk.WindowPosition.CENTER
         );
