@@ -21,22 +21,45 @@
 
 public class MainWindow : Gtk.Window {
     private const string CSS = """
+        .cassidyjames-principles,
+        .cassidyjames-principles * {
+            transition: 300ms ease-in-out;
+        }
+
+        .cassidyjames-principles {
+            color: black;
+            text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75);
+        }
+
+        .cassidyjames-principles:backdrop {
+            background: transparent;
+        }
+
+        .cassidyjames-principles:backdrop .titlebar {
+            opacity: 0;
+        }
+
+        .cassidyjames-principles:backdrop * {
+            border: 0px solid transparent;
+            box-shadow: 0 0 transparent;
+        }
+
         .principle-title {
             font-size: 2.5em;
             font-weight: 700;
         }
-        
+
         .principle-description {
             font-size: 1.25em;
         }
-        
+
         .principle-number {
             font-size: 10em;
             font-weight: 200;
             margin-top: -0.25em;
         }
     """;
-    
+
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
@@ -72,6 +95,8 @@ public class MainWindow : Gtk.Window {
 }
 
         set_titlebar (header);
+        set_keep_below (true);
+        stick ();
         add (main_layout);
     }
 }
