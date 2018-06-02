@@ -56,6 +56,7 @@ public class MainWindow : Gtk.Window {
         .principle-number {
             font-size: 10em;
             font-weight: 200;
+            letter-spacing: -0.125em;
             margin-top: -0.25em;
         }
     """;
