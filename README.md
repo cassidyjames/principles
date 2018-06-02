@@ -2,7 +2,9 @@
 
 # Principles
 
-![Screenshot](data/screenshot.png)
+| ![Screenshot](data/screenshot.png)           | ![Screenshot](data/screenshot-dark.png)           |
+| -------------------------------------------- | ------------------------------------------------- |
+| ![Screenshot](data/screenshot-wallpaper.png) | ![Screenshot](data/screenshot-wallpaper-dark.png) |
 
 Remember Dieter Rams' ten principles of good design. According to Rams, good design:
 
