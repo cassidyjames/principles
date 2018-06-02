@@ -71,14 +71,10 @@ public class ContentGrid : Gtk.Grid {
     public ContentGrid () {
         Object (
             column_spacing: 12,
-            row_spacing: 12,
-            margin_start: 24,
-            margin_end: 24,
-            margin_top: 24,
-            margin_bottom: 60
+            row_spacing: 12
         );
     }
-    
+
     construct {
         var rand = Random.int_range (0, content.length);
 

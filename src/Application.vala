@@ -20,9 +20,15 @@
 */
 
 public class Principles : Gtk.Application {
+    public static GLib.Settings settings;
+
     public Principles () {
         Object (application_id: "com.github.cassidyjames.principles",
         flags: ApplicationFlags.FLAGS_NONE);
+    }
+
+    static construct {
+        settings = new Settings ("com.github.cassidyjames.principles");
     }
 
     protected override void activate () {
@@ -31,8 +37,16 @@ public class Principles : Gtk.Application {
             return;
         }
 
-        var app_window = new MainWindow (this);
-        app_window.show_all ();
+        var main_window = new MainWindow (this);
+
+        var window_x = settings.get_int ("window-x");
+        var window_y = settings.get_int ("window-y");
+
+        if (window_x != -1 ||  window_y != -1) {
+            main_window.move (window_x, window_y);
+        }
+
+        main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
 
@@ -40,8 +54,8 @@ public class Principles : Gtk.Application {
         set_accels_for_action ("app.quit", {"Escape"});
 
         quit_action.activate.connect (() => {
-            if (app_window != null) {
-                app_window.destroy ();
+            if (main_window != null) {
+                main_window.destroy ();
             }
         });
     }
@@ -53,3 +67,4 @@ public class Principles : Gtk.Application {
         return app.run (args);
     }
 }
+
