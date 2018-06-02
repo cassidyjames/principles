@@ -21,11 +21,6 @@
 
 public class MainWindow : Gtk.Window {
     private const string CSS = """
-        .cassidyjames-principles,
-        .cassidyjames-principles * {
-            transition: 300ms ease-in-out;
-        }
-
         .cassidyjames-principles {
             color: black;
             text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75);
@@ -84,7 +79,24 @@ public class MainWindow : Gtk.Window {
         header_context.add_class ("default-decoration");
         header_context.add_class (Gtk.STYLE_CLASS_FLAT);
 
-        var main_layout = new ContentGrid ();
+        var gtk_settings = Gtk.Settings.get_default ();
+
+        var mode_switch = new ModeSwitch (
+            "display-brightness-symbolic",
+            "weather-clear-night-symbolic"
+        );
+        mode_switch.primary_icon_tooltip_text = _("Light background");
+        mode_switch.secondary_icon_tooltip_text = _("Dark background");
+        mode_switch.valign = Gtk.Align.CENTER;
+        mode_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
+
+        var main_layout = new Gtk.Grid ();
+        main_layout.margin_start = 24;
+        main_layout.margin_end = 24;
+        main_layout.margin_top = 24;
+        main_layout.margin_bottom = 60;
+
+        var content_grid = new ContentGrid ();
 
         var context = get_style_context ();
         context.add_class ("cassidyjames-principles");
@@ -95,14 +107,29 @@ public class MainWindow : Gtk.Window {
         try {
             provider.load_from_data (CSS, CSS.length);
 
-            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+            Gtk.StyleContext.add_provider_for_screen (
+                Gdk.Screen.get_default (),
+                provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
         } catch (GLib.Error e) {
             return;
-}
+        }
 
+        mode_switch.notify["active"].connect (() => {
+            if (gtk_settings.gtk_application_prefer_dark_theme) {
+                context.add_class ("dark");
+            } else {
+                context.remove_class ("dark");
+            }
+        });
+
+        main_layout.attach (content_grid, 0, 0);
+        header.pack_end (mode_switch);
         set_titlebar (header);
         set_keep_below (true);
         stick ();
+
         add (main_layout);
     }
 }

@@ -9,6 +9,7 @@ executable(
     'src/Application.vala',
     'src/Content.vala',
     'src/MainWindow.vala',
+    'src/Widgets/ModeSwitch.vala',
     dependencies: [
         dependency ('glib-2.0'),
         dependency ('gtk+-3.0')
