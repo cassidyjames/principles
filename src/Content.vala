@@ -19,7 +19,7 @@
 * Authored by: Cassidy James Blaede <c@ssidyjam.es>
 */
 
-public class ContentGrid : Gtk.Grid {
+public class ContentStack : Gtk.Stack {
     private struct Content {
         string title;
         string description;
@@ -68,38 +68,51 @@ public class ContentGrid : Gtk.Grid {
         }
     };
 
-    public ContentGrid () {
+    public ContentStack () {
         Object (
-            column_spacing: 12,
-            row_spacing: 12
+            margin_bottom: 24,
+            transition_type: Gtk.StackTransitionType.CROSSFADE
         );
     }
 
     construct {
-        var rand = Random.int_range (0, content.length);
+        int i = 1;
+        foreach (var principle in content) {
+            var number = new Gtk.Label (i.to_string ());
+            number.margin_start = 12;
+            number.margin_end = 24;
+            number.valign = Gtk.Align.START;
+            number.get_style_context ().add_class ("principle-number");
 
-        var number = new Gtk.Label ((rand + 1).to_string ());
-        number.margin_start = 12;
-        number.margin_end = 24;
-        number.valign = Gtk.Align.START;
-        number.get_style_context ().add_class ("principle-number");
+            var title = new Gtk.Label (principle.title);
+            title.max_width_chars = 28;
+            title.valign = Gtk.Align.END;
+            title.wrap = true;
+            title.xalign = 0;
+            title.get_style_context ().add_class ("principle-title");
 
-        var title = new Gtk.Label (content[rand].title);
-        title.max_width_chars = 28;
-        title.wrap = true;
-        title.xalign = 0;
-        title.get_style_context ().add_class ("principle-title");
+            var description = new Gtk.Label (principle.description);
+            description.max_width_chars = 40;
+            description.wrap = true;
+            description.valign = Gtk.Align.START;
+            description.xalign = 0;
+            description.get_style_context ().add_class ("principle-description");
 
-        var description = new Gtk.Label (content[rand].description);
-        description.hexpand = true;
-        description.max_width_chars = 40;
-        description.wrap = true;
-        description.xalign = 0;
-        description.get_style_context ().add_class ("principle-description");
+            var grid = new Gtk.Grid ();
+            grid.column_spacing = grid.row_spacing = 12;
+            grid.halign = Gtk.Align.CENTER;
 
-        attach (number,      0, 0, 1, 2);
-        attach (title,       1, 0);
-        attach (description, 1, 1);
+            grid.attach (number,      0, 0, 1, 2);
+            grid.attach (title,       1, 0);
+            grid.attach (description, 1, 1);
+
+            add_named (grid, i.to_string ());
+
+            i++;
+        }
+
+        var rand = Random.int_range (1, 11);
+        visible_child_name = rand.to_string ();
     }
 }
 

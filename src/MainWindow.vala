@@ -20,6 +20,8 @@
 */
 
 public class MainWindow : Gtk.Window {
+    private ContentStack stack;
+
     private const string CSS = """
         .cassidyjames-principles {
             color: black;
@@ -80,6 +82,10 @@ public class MainWindow : Gtk.Window {
         header_context.add_class ("default-decoration");
         header_context.add_class (Gtk.STYLE_CLASS_FLAT);
 
+        var refresh_button = new Gtk.Button.from_icon_name ("media-playlist-shuffle-symbolic");
+        refresh_button.margin_end = 12;
+        refresh_button.tooltip_text = _("Load a random principle");
+
         var gtk_settings = Gtk.Settings.get_default ();
 
         var mode_switch = new ModeSwitch (
@@ -92,12 +98,7 @@ public class MainWindow : Gtk.Window {
         mode_switch.valign = Gtk.Align.CENTER;
         mode_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
 
-        var main_layout = new Gtk.Grid ();
-        main_layout.margin = 12;
-        main_layout.margin_bottom = 56;
-        main_layout.width_request = 500;
-
-        var content_grid = new ContentGrid ();
+        stack = new ContentStack ();
 
         var context = get_style_context ();
         context.add_class ("cassidyjames-principles");
@@ -125,15 +126,34 @@ public class MainWindow : Gtk.Window {
             }
         });
 
+        refresh_button.clicked.connect (() => randomize_principle (stack) );
+
         Principles.settings.bind ("dark", mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
-        main_layout.attach (content_grid, 0, 0);
         header.pack_end (mode_switch);
+        header.pack_end (refresh_button);
+
         set_titlebar (header);
         set_keep_below (true);
         stick ();
 
-        add (main_layout);
+        add (stack);
+
+        stack.realize.connect (() => {
+           randomize_principle (stack, true);
+        });
+    }
+
+    private void randomize_principle (ContentStack stack, bool allow_current = false) {
+        var rand = Random.int_range (1, 11);
+        int current = int.parse (stack.visible_child_name);
+
+        if (allow_current || rand != current) {
+            stack.visible_child_name = rand.to_string ();
+            return;
+        }
+
+        randomize_principle (stack);
     }
 
     public override bool configure_event (Gdk.EventConfigure event) {
