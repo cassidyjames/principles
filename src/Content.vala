@@ -91,6 +91,7 @@ public class ContentGrid : Gtk.Grid {
         title.get_style_context ().add_class ("principle-title");
 
         var description = new Gtk.Label (content[rand].description);
+        description.hexpand = true;
         description.max_width_chars = 40;
         description.wrap = true;
         description.xalign = 0;
