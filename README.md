@@ -1,12 +1,21 @@
 [![Build Status](https://travis-ci.org/cassidyjames/principles.svg?branch=master)](https://travis-ci.org/cassidyjames/principles)
 
-# Principles
+<p align="center">
+  <img src="https://cdn.rawgit.com/cassidyjames/principles/1376a373d81a05cc6c88562feafb96aa02009872/data/icons/128/com.github.cassidyjames.principles.svg" alt="Icon" />
+</p>
+<h1 align="center">Principles</h1>
+<p align="center">
+  <a href="https://appcenter.elementary.io/com.github.cassidyjames.principles"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
+</p>
 
 | ![Screenshot](data/screenshot.png)           | ![Screenshot](data/screenshot-dark.png)           |
 | -------------------------------------------- | ------------------------------------------------- |
 | ![Screenshot](data/screenshot-wallpaper.png) | ![Screenshot](data/screenshot-wallpaper-dark.png) |
 
-Remember Dieter Rams' ten principles of good design. According to Rams, good design:
+
+## Remember Dieter Rams' ten principles of good design
+
+According to Rams, good design:
 
 1. **is innovative** – The possibilities for progression are not, by any means, exhausted. Technological development is always offering new opportunities for original designs. But imaginative design always develops in tandem with improving technology, and can never be an end in itself.
 
@@ -29,4 +38,47 @@ Remember Dieter Rams' ten principles of good design. According to Rams, good des
 10. **is as little design as possible** – Less, but better – because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity.
 
 Get a simple reminder of one of these principles each time you open the app.
+
+
+## Made for [elementary OS](https://elementary.io)
+
+Principles is designed and developed on and for [elementary OS](https://elementary.io). Purchasing through AppCenter directly supports the development and ensures instant updates straight from me. Get it on AppCenter for the best experience.
+
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.cassidyjames.principles)
+
+
+## Developing and Building
+
+If you want to hack on and build Palette yourself, you'll need the following dependencies:
+
+* libgtk-3-dev
+* meson
+* valac
+
+Run `meson build` to configure the build environment and run `ninja test` to build and run automated tests
+
+    meson build --prefix=/usr
+    cd build
+    ninja test
+
+To install, use `ninja install`, then execute with `com.github.cassidyjames.principles`
+
+    sudo ninja install
+    com.github.cassidyjames.principles
+
+
+## Other Platforms
+
+Principles is made for elementary OS, but may have been built and made available elsewhere by community members. These builds may have modifications or changes and **are not provided or supported by me**.
+
+
+## Special Thanks
+
+- [Micah Ilbery](https://github.com/micahilbery) for the shiny icons
+- [Daniel Foré](https://github.com/danrabbit) for his apps to use as code examples
+
+
+-----
+
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.cassidyjames.principles)
 
