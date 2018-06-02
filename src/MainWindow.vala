@@ -86,6 +86,7 @@ public class MainWindow : Gtk.Window {
             "display-brightness-symbolic",
             "weather-clear-night-symbolic"
         );
+        mode_switch.margin_end = 6;
         mode_switch.primary_icon_tooltip_text = _("Light background");
         mode_switch.secondary_icon_tooltip_text = _("Dark background");
         mode_switch.valign = Gtk.Align.CENTER;
