@@ -124,6 +124,8 @@ public class MainWindow : Gtk.Window {
             }
         });
 
+        Principles.settings.bind ("dark", mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+
         main_layout.attach (content_grid, 0, 0);
         header.pack_end (mode_switch);
         set_titlebar (header);
@@ -131,6 +133,15 @@ public class MainWindow : Gtk.Window {
         stick ();
 
         add (main_layout);
+    }
+
+    public override bool configure_event (Gdk.EventConfigure event) {
+        int root_x, root_y;
+        get_position (out root_x, out root_y);
+        Principles.settings.set_int ("window-x", root_x);
+        Principles.settings.set_int ("window-y", root_y);
+
+        return base.configure_event (event);
     }
 }
 
