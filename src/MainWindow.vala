@@ -23,25 +23,25 @@ public class MainWindow : Gtk.Window {
     private ContentStack stack;
 
     private const string CSS = """
-        .cassidyjames-principles {
+        .principles {
             color: black;
             text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75);
         }
 
-        .cassidyjames-principles.dark {
+        .principles.dark {
             color: white;
             text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.75);
         }
 
-        .cassidyjames-principles:backdrop {
+        .principles:backdrop {
             background: transparent;
         }
 
-        .cassidyjames-principles:backdrop .titlebar {
+        .principles:backdrop .titlebar {
             opacity: 0;
         }
 
-        .cassidyjames-principles:backdrop * {
+        .principles:backdrop * {
             border: 0px solid transparent;
             box-shadow: 0 0 transparent;
         }
@@ -82,9 +82,9 @@ public class MainWindow : Gtk.Window {
         header_context.add_class ("default-decoration");
         header_context.add_class (Gtk.STYLE_CLASS_FLAT);
 
-        var refresh_button = new Gtk.Button.from_icon_name ("media-playlist-shuffle-symbolic");
-        refresh_button.margin_end = 12;
-        refresh_button.tooltip_text = _("Load a random principle");
+        var randomize_button = new Gtk.Button.from_icon_name ("media-playlist-shuffle-symbolic");
+        randomize_button.margin_end = 12;
+        randomize_button.tooltip_text = _("Load a random principle");
 
         var gtk_settings = Gtk.Settings.get_default ();
 
@@ -101,7 +101,7 @@ public class MainWindow : Gtk.Window {
         stack = new ContentStack ();
 
         var context = get_style_context ();
-        context.add_class ("cassidyjames-principles");
+        context.add_class ("principles");
         context.add_class ("rounded");
         context.add_class ("flat");
 
@@ -126,12 +126,12 @@ public class MainWindow : Gtk.Window {
             }
         });
 
-        refresh_button.clicked.connect (() => randomize_principle (stack) );
+        randomize_button.clicked.connect (() => randomize_principle (stack) );
 
         Principles.settings.bind ("dark", mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
         header.pack_end (mode_switch);
-        header.pack_end (refresh_button);
+        header.pack_end (randomize_button);
 
         set_titlebar (header);
         set_keep_below (true);
@@ -145,7 +145,7 @@ public class MainWindow : Gtk.Window {
     }
 
     private void randomize_principle (ContentStack stack, bool allow_current = false) {
-        var rand = Random.int_range (1, 11);
+        int rand = Random.int_range (1, 11);
         int current = int.parse (stack.visible_child_name);
 
         if (allow_current || rand != current) {
