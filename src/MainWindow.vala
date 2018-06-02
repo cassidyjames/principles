@@ -92,10 +92,9 @@ public class MainWindow : Gtk.Window {
         mode_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
 
         var main_layout = new Gtk.Grid ();
-        main_layout.margin_start = 24;
-        main_layout.margin_end = 24;
-        main_layout.margin_top = 24;
-        main_layout.margin_bottom = 60;
+        main_layout.margin = 12;
+        main_layout.margin_bottom = 56;
+        main_layout.width_request = 500;
 
         var content_grid = new ContentGrid ();
 

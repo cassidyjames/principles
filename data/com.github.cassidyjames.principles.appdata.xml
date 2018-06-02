@@ -9,22 +9,37 @@
   <description>
     <p>According to Dieter Rams, good design is innovative, makes a product useful, is aesthetic, makes a product understandable, is unobtrusive, is honest, is long-lasting, is thorough down to the last detail, is environmentally-friendly, and is as little design as possible.</p>
     <p>Get a simple reminder of one of these principles each time you open the app.</p>
+    <ul>
+      <li>Choose between a light or dark style</li>
+      <li>Applet stays on the bottom on all workspaces</li>
+      <li>Automatically goes transparent when not focused</li>
+    </ul>
+    <p>Set to automatically start in System Settings → Applications → Startup</p>
   </description>
   <provides>
     <binary>com.github.cassidyjames.principles</binary>
   </provides>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot-dark.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot-wallpaper.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot-wallpaper-dark.png</image>
+    </screenshot>
+  </screenshots>
   ​<releases>
-    <release version="1.0.0" date="2018-05-20">
+    <release version="1.0.0" date="2018-06-02">
       <description>
         <p>Initial release</p>
       </description>
     </release>
   </releases>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot.png</image>
-    </screenshot>
-  </screenshots>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -60,7 +75,7 @@
   <custom>
     <value key="x-appcenter-color-primary">#fff</value>
     <value key="x-appcenter-color-primary-text">#000</value>
-    <value key="x-appcenter-suggested-price">1</value>
+    <value key="x-appcenter-suggested-price">2</value>
   </custom>
 </component>
 
