@@ -34,6 +34,16 @@
     </screenshot>
   </screenshots>
   ​<releases>
+    <release version="1.0.1" date="2018-06-03">
+      <description>
+        <p>Post-release tweaking</p>
+        <ul>
+            <li>Added animations</li>
+            <li>Tweaked punctuation</li>
+            <li>Under-the-hood improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.0" date="2018-06-02">
       <description>
         <p>Initial release</p>

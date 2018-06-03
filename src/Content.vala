@@ -52,7 +52,7 @@ public class ContentStack : Gtk.Stack {
         },
         Content () {
             title = "Good design is long-lasting",
-            description = "It avoids being fashionable and therefore never appears antiquated. Unlike fashionable design, it lasts many years – even in today’s throwaway society."
+            description = "It avoids being fashionable and therefore never appears antiquated. Unlike fashionable design, it lasts many years—even in today’s throwaway society."
         },
         Content () {
             title = "Good design is thorough down to the last detail",
@@ -64,7 +64,7 @@ public class ContentStack : Gtk.Stack {
         },
         Content () {
             title = "Good design is as little design as possible",
-            description = "Less, but better – because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity."
+            description = "Less, but better—because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity."
         }
     };
 
