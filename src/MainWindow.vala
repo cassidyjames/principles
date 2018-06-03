@@ -22,47 +22,6 @@
 public class MainWindow : Gtk.Window {
     private ContentStack stack;
 
-    private const string CSS = """
-        .principles {
-            color: black;
-            text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.75);
-        }
-
-        .principles.dark {
-            color: white;
-            text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.75);
-        }
-
-        .principles:backdrop {
-            background: transparent;
-        }
-
-        .principles:backdrop .titlebar {
-            opacity: 0;
-        }
-
-        .principles:backdrop * {
-            border: 0px solid transparent;
-            box-shadow: 0 0 transparent;
-        }
-
-        .principle-title {
-            font-size: 2.5em;
-            font-weight: 700;
-        }
-
-        .principle-description {
-            font-size: 1.25em;
-        }
-
-        .principle-number {
-            font-size: 10em;
-            font-weight: 200;
-            letter-spacing: -0.125em;
-            margin-top: -0.25em;
-        }
-    """;
-
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
@@ -106,17 +65,8 @@ public class MainWindow : Gtk.Window {
         context.add_class ("flat");
 
         var provider = new Gtk.CssProvider ();
-        try {
-            provider.load_from_data (CSS, CSS.length);
-
-            Gtk.StyleContext.add_provider_for_screen (
-                Gdk.Screen.get_default (),
-                provider,
-                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-            );
-        } catch (GLib.Error e) {
-            return;
-        }
+        provider.load_from_resource ("/com/github/cassidyjames/principles/Application.css");
+        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         mode_switch.notify["active"].connect (() => {
             if (gtk_settings.gtk_application_prefer_dark_theme) {
