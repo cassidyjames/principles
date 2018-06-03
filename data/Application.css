@@ -13,15 +13,18 @@
     text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.75);
 }
 
-.principles:backdrop {
+.principles:backdrop,
+.principles.transparent {
     background: transparent;
 }
 
-.principles:backdrop .titlebar {
+.principles:backdrop .titlebar,
+.principles.transparent .titlebar {
     opacity: 0;
 }
 
-.principles:backdrop * {
+.principles:backdrop *,
+.principles.transparent * {
     border: 0px solid transparent;
     box-shadow: 0 0 transparent;
 }

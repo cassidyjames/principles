@@ -92,6 +92,37 @@ public class MainWindow : Gtk.Window {
         stack.realize.connect (() => {
            randomize_principle (stack, true);
         });
+
+        var mouse = Gdk.Display.get_default ().get_device_manager ().get_client_pointer ();
+        enter_notify_event.connect (() => {
+            critical ("Enter");
+            context.remove_class ("transparent");
+        });
+
+        leave_notify_event.connect (() => {
+            critical ("Leave");
+
+            int mouse_x, mouse_y;
+            var mask = Gdk.ModifierType.MODIFIER_MASK;
+            get_window ().get_device_position (mouse, out mouse_x, out mouse_y, out mask);
+
+            critical ("mouse %i, %i", mouse_x, mouse_y);
+
+            int root_x, root_y;
+            get_position (out root_x, out root_y);
+
+            int width = get_allocated_width ();
+            int height = get_allocated_height ();
+
+            critical ("size %i, %i", width, height);
+
+            if (mouse_x < 0 || mouse_x > width || mouse_y < 0 || mouse_y > height) {
+                critical ("Real leave");
+                context.add_class ("transparent");
+            } else {
+                critical ("False alarm");
+            }
+        });
     }
 
     private void randomize_principle (ContentStack stack, bool allow_current = false) {
