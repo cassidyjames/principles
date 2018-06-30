@@ -19,6 +19,7 @@
   <provides>
     <binary>com.github.cassidyjames.principles</binary>
   </provides>
+
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot.png</image>
@@ -33,8 +34,10 @@
       <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot-wallpaper-dark.png</image>
     </screenshot>
   </screenshots>
+
   ​<releases>
-    <release version="1.1.0" date="2018-06-30">
+
+    <release version="1.1.1" date="2018-06-30">
       <description>
         <p>Hello, Juno.</p>
         <ul>
@@ -43,7 +46,7 @@
         </ul>
       </description>
     </release>
-  ​<releases>
+
     <release version="1.0.1" date="2018-06-03">
       <description>
         <p>Post-release tweaking</p>
@@ -54,12 +57,15 @@
         </ul>
       </description>
     </release>
+
     <release version="1.0.0" date="2018-06-02">
       <description>
         <p>Initial release</p>
       </description>
     </release>
+
   </releases>
+
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -89,9 +95,11 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+
   <developer_name>Cassidy James Blaede</developer_name>
   <url type="homepage">https://github.com/cassidyjames/principles</url>
   <url type="bugtracker">https://github.com/cassidyjames/principles/issues</url>
+
   <custom>
     <value key="x-appcenter-color-primary">#fff</value>
     <value key="x-appcenter-color-primary-text">#000</value>
