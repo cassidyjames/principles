@@ -34,6 +34,16 @@
     </screenshot>
   </screenshots>
   ​<releases>
+    <release version="1.1.0" date="2018-06-30">
+      <description>
+        <p>Hello, Juno.</p>
+        <ul>
+            <li>Split packaging out</li>
+            <li>Build for Juno</li>
+        </ul>
+      </description>
+    </release>
+  ​<releases>
     <release version="1.0.1" date="2018-06-03">
       <description>
         <p>Post-release tweaking</p>
