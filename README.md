@@ -49,7 +49,7 @@ Principles is designed and developed on and for [elementary OS](https://elementa
 
 ## Developing and Building
 
-If you want to hack on and build Palette yourself, you'll need the following dependencies:
+If you want to hack on and build Principles yourself, you'll need the following dependencies:
 
 * libgtk-3-dev
 * meson
