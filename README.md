@@ -46,6 +46,7 @@ Principles is designed and developed on and for [elementary OS](https://elementa
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.cassidyjames.principles)
 
+Versions of Principles may have been built and made available elsewhere by third-parties. These builds may have modifications or changes and **are not provided nor supported by me**. The only supported version is distributed via AppCenter on elementary OS.
 
 ## Developing and Building
 
