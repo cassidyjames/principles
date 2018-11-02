@@ -101,8 +101,8 @@
   <url type="bugtracker">https://github.com/cassidyjames/principles/issues</url>
 
   <custom>
-    <value key="x-appcenter-color-primary">#fff</value>
-    <value key="x-appcenter-color-primary-text">#000</value>
+    <value key="x-appcenter-color-primary">#525</value>
+    <value key="x-appcenter-color-primary-text">#fffffc</value>
     <value key="x-appcenter-suggested-price">2</value>
   </custom>
 </component>
