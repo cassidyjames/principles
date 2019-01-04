@@ -99,6 +99,9 @@
   <developer_name>Cassidy James Blaede</developer_name>
   <url type="homepage">https://github.com/cassidyjames/principles</url>
   <url type="bugtracker">https://github.com/cassidyjames/principles/issues</url>
+  <url type="donation">https://cassidyjames.com/pay</url>
+  <url type="help">https://cassidyjames.com/support</url>
+  <url type="contact">https://cassidyjames.com/support</url>
 
   <custom>
     <value key="x-appcenter-color-primary">#525</value>
