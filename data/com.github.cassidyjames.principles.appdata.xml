@@ -16,6 +16,9 @@
     </ul>
     <p>Set to automatically start in System Settings → Applications → Startup</p>
   </description>
+
+  <launchable type="desktop-id">com.github.cassidyjames.principles.desktop</launchable>
+
   <provides>
     <binary>com.github.cassidyjames.principles</binary>
   </provides>
