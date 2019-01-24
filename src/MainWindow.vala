@@ -47,7 +47,7 @@ public class MainWindow : Gtk.Window {
 
         var gtk_settings = Gtk.Settings.get_default ();
 
-        var mode_switch = new ModeSwitch (
+        var mode_switch = new Granite.ModeSwitch.from_icon_name (
             "display-brightness-symbolic",
             "weather-clear-night-symbolic"
         );
