@@ -1,0 +1,193 @@
+# Occitan translations for com.github.cassidyjames.principles package.
+# Copyright (C) 2019 THE com.github.cassidyjames.principles'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.cassidyjames.principles package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.cassidyjames.principles\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-24 16:13-0700\n"
+"PO-Revision-Date: 2019-01-24 15:55-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:7
+#: data/launcher.desktop.in:3 src/MainWindow.vala:31
+msgid "Principles"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:8
+#: data/launcher.desktop.in:5
+msgid "Remember Dieter Rams' ten principles of good design"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:10
+msgid ""
+"According to Dieter Rams, good design is innovative, makes a product useful, "
+"is aesthetic, makes a product understandable, is unobtrusive, is honest, is "
+"long-lasting, is thorough down to the last detail, is environmentally-"
+"friendly, and is as little design as possible."
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:11
+msgid ""
+"Get a simple reminder of one of these principles each time you open the app."
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:13
+msgid "Choose between a light or dark style"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:14
+msgid "Applet stays on the bottom on all workspaces"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:15
+msgid "Automatically goes transparent when not focused"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:17
+msgid "Set to automatically start in System Settings → Applications → Startup"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:108
+msgid "Cassidy James Blaede"
+msgstr ""
+
+#: data/launcher.desktop.in:4
+msgid "Design Principles Viewer"
+msgstr ""
+
+#: data/launcher.desktop.in:8
+msgid "com.github.cassidyjames.principles"
+msgstr ""
+
+#: data/launcher.desktop.in:12
+msgid "dieter;rams;design;aesthetic;guidelines;"
+msgstr ""
+
+#: src/MainWindow.vala:46
+msgid "Load a random principle"
+msgstr ""
+
+#: src/MainWindow.vala:55
+msgid "Light background"
+msgstr ""
+
+#: src/MainWindow.vala:56
+msgid "Dark background"
+msgstr ""
+
+#: src/Content.vala:30
+msgid "Good design is innovative"
+msgstr ""
+
+#: src/Content.vala:31
+msgid ""
+"The possibilities for innovation are not, by any means, exhausted. "
+"Technological development is always offering new opportunities for "
+"innovative design. But innovative design always develops in tandem with "
+"innovative technology, and can never be an end in itself."
+msgstr ""
+
+#: src/Content.vala:34
+msgid "Good design makes a product useful"
+msgstr ""
+
+#: src/Content.vala:35
+msgid ""
+"A product is bought to be used. It has to satisfy certain criteria, not only "
+"functional, but also psychological and aesthetic. Good design emphasizes the "
+"usefulness of a product whilst disregarding anything that could possibly "
+"detract from it."
+msgstr ""
+
+#: src/Content.vala:38
+msgid "Good design is aesthetic"
+msgstr ""
+
+#: src/Content.vala:39
+msgid ""
+"The aesthetic quality of a product is integral to its usefulness because "
+"products we use every day affect our person and our well-being. But only "
+"well-executed objects can be beautiful."
+msgstr ""
+
+#: src/Content.vala:42
+msgid "Good design makes a product understandable"
+msgstr ""
+
+#: src/Content.vala:43
+msgid ""
+"It clarifies the product’s structure. Better still, it can make the product "
+"talk. At best, it is self-explanatory."
+msgstr ""
+
+#: src/Content.vala:46
+msgid "Good design is unobtrusive"
+msgstr ""
+
+#: src/Content.vala:47
+msgid ""
+"Products fulfilling a purpose are like tools. They are neither decorative "
+"objects nor works of art. Their design should therefore be both neutral and "
+"restrained, to leave room for the user’s self-expression."
+msgstr ""
+
+#: src/Content.vala:50
+msgid "Good design is honest"
+msgstr ""
+
+#: src/Content.vala:51
+msgid ""
+"It does not make a product more innovative, powerful or valuable than it "
+"really is. It does not attempt to manipulate the consumer with promises that "
+"cannot be kept."
+msgstr ""
+
+#: src/Content.vala:54
+msgid "Good design is long-lasting"
+msgstr ""
+
+#: src/Content.vala:55
+msgid ""
+"It avoids being fashionable and therefore never appears antiquated. Unlike "
+"fashionable design, it lasts many years—even in today’s throwaway society."
+msgstr ""
+
+#: src/Content.vala:58
+msgid "Good design is thorough down to the last detail"
+msgstr ""
+
+#: src/Content.vala:59
+msgid ""
+"Nothing must be arbitrary or left to chance. Care and accuracy in the design "
+"process show respect towards the user."
+msgstr ""
+
+#: src/Content.vala:62
+msgid "Good design is environmentally-friendly"
+msgstr ""
+
+#: src/Content.vala:63
+msgid ""
+"Design makes an important contribution to the preservation of the "
+"environment. It conserves resources and minimizes physical and visual "
+"pollution throughout the lifecycle of the product."
+msgstr ""
+
+#: src/Content.vala:66
+msgid "Good design is as little design as possible"
+msgstr ""
+
+#: src/Content.vala:67
+msgid ""
+"Less, but better—because it concentrates on the essential aspects, and the "
+"products are not burdened with non-essentials. Back to purity, back to "
+"simplicity."
+msgstr ""

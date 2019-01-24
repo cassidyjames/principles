@@ -23,12 +23,24 @@ public class Principles : Gtk.Application {
     public static GLib.Settings settings;
 
     public Principles () {
-        Object (application_id: "com.github.cassidyjames.principles",
-        flags: ApplicationFlags.FLAGS_NONE);
+        Object (
+            application_id: "com.github.cassidyjames.principles",
+            flags: ApplicationFlags.FLAGS_NONE
+        );
+    }
+
+    public static Principles _instance = null;
+    public static Principles instance {
+        get {
+            if (_instance == null) {
+                _instance = new Principles ();
+            }
+            return _instance;
+        }
     }
 
     static construct {
-        settings = new Settings ("com.github.cassidyjames.principles");
+        settings = new Settings (Principles.instance.application_id);
     }
 
     protected override void activate () {
