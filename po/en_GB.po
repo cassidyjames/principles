@@ -1,0 +1,90 @@
+# English translations for com.github.cassidyjames.principles package.
+# Copyright (C) 2019 THE com.github.cassidyjames.principles'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.cassidyjames.principles package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.cassidyjames.principles\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-24 15:55-0700\n"
+"PO-Revision-Date: 2019-01-24 15:55-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:7
+#: data/launcher.desktop.in:3 src/MainWindow.vala:31
+msgid "Principles"
+msgstr "Principles"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:8
+#: data/launcher.desktop.in:5
+msgid "Remember Dieter Rams' ten principles of good design"
+msgstr "Remember Dieter Rams' ten principles of good design"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:10
+msgid ""
+"According to Dieter Rams, good design is innovative, makes a product useful, "
+"is aesthetic, makes a product understandable, is unobtrusive, is honest, is "
+"long-lasting, is thorough down to the last detail, is environmentally-"
+"friendly, and is as little design as possible."
+msgstr ""
+"According to Dieter Rams, good design is innovative, makes a product useful, "
+"is aesthetic, makes a product understandable, is unobtrusive, is honest, is "
+"long-lasting, is thorough down to the last detail, is environmentally-"
+"friendly, and is as little design as possible."
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:11
+msgid ""
+"Get a simple reminder of one of these principles each time you open the app."
+msgstr ""
+"Get a simple reminder of one of these principles each time you open the app."
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:13
+msgid "Choose between a light or dark style"
+msgstr "Choose between a light or dark style"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:14
+msgid "Applet stays on the bottom on all workspaces"
+msgstr "Applet stays on the bottom on all workspaces"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:15
+msgid "Automatically goes transparent when not focused"
+msgstr "Automatically goes transparent when not focused"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:17
+msgid "Set to automatically start in System Settings → Applications → Startup"
+msgstr "Set to automatically start in System Settings → Applications → Startup"
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:108
+msgid "Cassidy James Blaede"
+msgstr "Cassidy James Blaede"
+
+#: data/launcher.desktop.in:4
+msgid "Design Principles Viewer"
+msgstr "Design Principles Viewer"
+
+#: data/launcher.desktop.in:8
+msgid "com.github.cassidyjames.principles"
+msgstr "com.github.cassidyjames.principles"
+
+#: data/launcher.desktop.in:12
+msgid "dieter;rams;design;aesthetic;guidelines;"
+msgstr "dieter;rams;design;aesthetic;guidelines;"
+
+#: src/MainWindow.vala:46
+msgid "Load a random principle"
+msgstr "Load a random principle"
+
+#: src/MainWindow.vala:55
+msgid "Light background"
+msgstr "Light background"
+
+#: src/MainWindow.vala:56
+msgid "Dark background"
+msgstr "Dark background"

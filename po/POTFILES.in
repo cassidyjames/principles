@@ -1,0 +1,6 @@
+data/com.github.cassidyjames.principles.appdata.xml.in
+data/launcher.desktop.in
+src/Application.vala
+src/MainWindow.vala
+src/Content.vala
+src/Widgets/ModeSwitch.vala
