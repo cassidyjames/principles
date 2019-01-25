@@ -1,16 +1,16 @@
 # French translations for com.github.cassidyjames.principles package.
 # Copyright (C) 2019 THE com.github.cassidyjames.principles'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.cassidyjames.principles package.
-# Automatically generated, 2019.
+# NathanBnm, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.principles\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-24 16:13-0700\n"
-"PO-Revision-Date: 2019-01-24 15:55-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-01-25 08:45+0100\n"
+"Last-Translator: NathanBnm\n"
+"Language-Team: Français\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,12 +20,12 @@ msgstr ""
 #: data/com.github.cassidyjames.principles.appdata.xml.in:7
 #: data/launcher.desktop.in:3 src/MainWindow.vala:31
 msgid "Principles"
-msgstr ""
+msgstr "Principes"
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "Remember Dieter Rams' ten principles of good design"
-msgstr ""
+msgstr "Rappelez-vous les dix principes de la conception de Dieter Rams"
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:10
 msgid ""
@@ -34,59 +34,63 @@ msgid ""
 "long-lasting, is thorough down to the last detail, is environmentally-"
 "friendly, and is as little design as possible."
 msgstr ""
+"Selon Dieter Rams, un bon design est innovant, rend un produit utile, "
+"esthétique, compréhensible, discret, honnête, durable, est travaillé jusque "
+"dans les moindres détails, le mieux integré dans son environnement et le plus léger possible."
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:11
 msgid ""
 "Get a simple reminder of one of these principles each time you open the app."
 msgstr ""
+"Obtenez un simple rappel de l'un de ces principes à chaque fois que vous ouvrez l'application."
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:13
 msgid "Choose between a light or dark style"
-msgstr ""
+msgstr "Choisissez entre le thème clair ou sombre"
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:14
 msgid "Applet stays on the bottom on all workspaces"
-msgstr ""
+msgstr "L'application reste en bas sur tous les espaces de travail"
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:15
 msgid "Automatically goes transparent when not focused"
-msgstr ""
+msgstr "Devient automatiquement transparente lorsqu'elle n'est pas au premier plan"
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:17
 msgid "Set to automatically start in System Settings → Applications → Startup"
-msgstr ""
+msgstr "Configuré pour démarrer automatiquement dans Paramètres du système → Applications → Démarrage"
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:108
 msgid "Cassidy James Blaede"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/launcher.desktop.in:4
 msgid "Design Principles Viewer"
-msgstr ""
+msgstr "Visionneuse des principes de conception"
 
 #: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.principles"
-msgstr ""
+msgstr "com.github.cassidyjames.principles"
 
 #: data/launcher.desktop.in:12
 msgid "dieter;rams;design;aesthetic;guidelines;"
-msgstr ""
+msgstr "dieter;rams;conception;ésthétique;guide"
 
 #: src/MainWindow.vala:46
 msgid "Load a random principle"
-msgstr ""
+msgstr "Charger un principe aléatoire"
 
 #: src/MainWindow.vala:55
 msgid "Light background"
-msgstr ""
+msgstr "Thème clair"
 
 #: src/MainWindow.vala:56
 msgid "Dark background"
-msgstr ""
+msgstr "Thème sombre"
 
 #: src/Content.vala:30
 msgid "Good design is innovative"
-msgstr ""
+msgstr "Un bon design est innovant"
 
 #: src/Content.vala:31
 msgid ""
@@ -95,10 +99,14 @@ msgid ""
 "innovative design. But innovative design always develops in tandem with "
 "innovative technology, and can never be an end in itself."
 msgstr ""
+"Les possibilités d'innovation ne sont en aucun cas épuisées. "
+"Le développement technologique offre toujours de nouvelles opportunités pour "
+"une conception innovante. Mais la conception innovante se développe toujours en tandem avec "
+"les technologies innovantes, et ne peut jamais être une fin en soi."
 
 #: src/Content.vala:34
 msgid "Good design makes a product useful"
-msgstr ""
+msgstr "Une bonne conception rend un produit utile"
 
 #: src/Content.vala:35
 msgid ""
@@ -107,10 +115,14 @@ msgid ""
 "usefulness of a product whilst disregarding anything that could possibly "
 "detract from it."
 msgstr ""
+"Un produit est acheté pour être utilisé. Il doit répondre à certains critères, non seulement "
+"fonctionnels, mais aussi psychologiques et esthétiques. Une bonne conception met l'accent sur "
+"l'utilité d'un produit tout en ne tenant pas compte de tout ce qui pourrait éventuellement "
+"lui nuire."
 
 #: src/Content.vala:38
 msgid "Good design is aesthetic"
-msgstr ""
+msgstr "Une bonne conception est ésthétique"
 
 #: src/Content.vala:39
 msgid ""
@@ -118,20 +130,25 @@ msgid ""
 "products we use every day affect our person and our well-being. But only "
 "well-executed objects can be beautiful."
 msgstr ""
+"La qualité esthétique d'un produit fait partie intégrante de son utilité car "
+"les produits que nous utilisons tous les jours affectent notre personne et notre bien-être. Mais seuls "
+"des objets bien réalisés peuvent être beaux."
 
 #: src/Content.vala:42
 msgid "Good design makes a product understandable"
-msgstr ""
+msgstr "Une bonne conception rend un produit compréhensible"
 
 #: src/Content.vala:43
 msgid ""
 "It clarifies the product’s structure. Better still, it can make the product "
 "talk. At best, it is self-explanatory."
 msgstr ""
+"Cela clarifie la structure du produit. Mieux encore, cela peut faire parler le produit. "
+"Au mieux, il est explicite."
 
 #: src/Content.vala:46
 msgid "Good design is unobtrusive"
-msgstr ""
+msgstr "Une bonne conception est discrète"
 
 #: src/Content.vala:47
 msgid ""
@@ -139,10 +156,13 @@ msgid ""
 "objects nor works of art. Their design should therefore be both neutral and "
 "restrained, to leave room for the user’s self-expression."
 msgstr ""
+"Les produits qui remplissent une fonction sont comme des outils. Ce ne sont ni des objets décoratifs "
+"ni des œuvres d'art. Leur conception doit donc être à la fois neutre et "
+"sobre, afin de laisser à l'utilisateur la possibilité de s'exprimer."
 
 #: src/Content.vala:50
 msgid "Good design is honest"
-msgstr ""
+msgstr "Une bonne conception est honnête"
 
 #: src/Content.vala:51
 msgid ""
@@ -150,30 +170,36 @@ msgid ""
 "really is. It does not attempt to manipulate the consumer with promises that "
 "cannot be kept."
 msgstr ""
+"ELle ne rend pas un produit plus innovateur, plus puissant ou plus précieux qu'il ne "
+"l'est réellement. Elle ne vise pas à manipuler le consommateur avec des promesses qui ne peuvent être tenues."
 
 #: src/Content.vala:54
 msgid "Good design is long-lasting"
-msgstr ""
+msgstr "Une bonne conception est durable"
 
 #: src/Content.vala:55
 msgid ""
 "It avoids being fashionable and therefore never appears antiquated. Unlike "
 "fashionable design, it lasts many years—even in today’s throwaway society."
 msgstr ""
+"Elle évite d'être tendance et n'apparaît donc jamais désuete. Contrairement "
+"a une conception tendance, Elle dure de nombreuses années, même dans la tendance actuelle du jetable."
 
 #: src/Content.vala:58
 msgid "Good design is thorough down to the last detail"
-msgstr ""
+msgstr "Une bonne conception est travaillée jusque dans les moindres détails"
 
 #: src/Content.vala:59
 msgid ""
 "Nothing must be arbitrary or left to chance. Care and accuracy in the design "
 "process show respect towards the user."
 msgstr ""
+"Rien ne doit être arbitraire ou laissé au hasard. Le soin et la précision dans le processus "
+"de conception font preuve de respect envers l'utilisateur."
 
 #: src/Content.vala:62
 msgid "Good design is environmentally-friendly"
-msgstr ""
+msgstr "Une bonne conception s'intègre dans son environnement"
 
 #: src/Content.vala:63
 msgid ""
@@ -181,10 +207,13 @@ msgid ""
 "environment. It conserves resources and minimizes physical and visual "
 "pollution throughout the lifecycle of the product."
 msgstr ""
+"La conception apporte une contribution importante à la préservation de "
+"l'environnement. Elle préserve les ressources et minimise la pollution physique et visuelle "
+"tout au long du cycle de vie du produit."
 
 #: src/Content.vala:66
 msgid "Good design is as little design as possible"
-msgstr ""
+msgstr "Une bonne conception est la plus légère possible"
 
 #: src/Content.vala:67
 msgid ""
@@ -192,3 +221,6 @@ msgid ""
 "products are not burdened with non-essentials. Back to purity, back to "
 "simplicity."
 msgstr ""
+"Moins, mais mieux - parce qu'elle se concentre sur les aspects essentiels et que les "
+"produits ne sont pas surchargés avec ce qui n'est pas essentiel. Retour à la pureté, retour à "
+"la simplicité."
