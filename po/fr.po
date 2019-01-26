@@ -74,7 +74,7 @@ msgstr "com.github.cassidyjames.principles"
 
 #: data/launcher.desktop.in:12
 msgid "dieter;rams;design;aesthetic;guidelines;"
-msgstr "dieter;rams;conception;ésthétique;guide"
+msgstr "dieter;rams;conception;ésthétique;guide;"
 
 #: src/MainWindow.vala:46
 msgid "Load a random principle"
