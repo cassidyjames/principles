@@ -35,6 +35,11 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.2.1" date="2019-01-25">
+      <description>
+        <p>Under-the-hood AppStream data fixes</p>
+      </description>
+    </release>
     <release version="1.2.0" date="2019-01-25">
       <description>
         <p>Principles is now translatable and has been translated to French (thanks, @NathanBnm!)</p>
