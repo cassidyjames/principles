@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/cassidyjames/principles.svg?branch=master)](https://travis-ci.org/cassidyjames/principles)
 
 <p align="center">
-  <img src="data/icons/128/com.github.cassidyjames.principles.svg" alt="Icon" />
+  <img src="data/icons/128.svg" alt="Icon" />
 </p>
 <h1 align="center">Principles</h1>
 <p align="center">
