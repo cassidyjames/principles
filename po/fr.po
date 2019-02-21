@@ -25,7 +25,7 @@ msgstr "Principes"
 #: data/com.github.cassidyjames.principles.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "Remember Dieter Rams' ten principles of good design"
-msgstr "Rappelez-vous les dix principes de la conception de Dieter Rams"
+msgstr "Rappelez-vous les dix principes du design de Dieter Rams"
 
 #: data/com.github.cassidyjames.principles.appdata.xml.in:10
 msgid ""
@@ -71,7 +71,7 @@ msgstr "Cassidy James Blaede"
 
 #: data/launcher.desktop.in:4
 msgid "Design Principles Viewer"
-msgstr "Visionneuse des principes de conception"
+msgstr "Visionneuse des principes du design"
 
 #: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.principles"
@@ -79,7 +79,7 @@ msgstr "com.github.cassidyjames.principles"
 
 #: data/launcher.desktop.in:12
 msgid "dieter;rams;design;aesthetic;guidelines;"
-msgstr "dieter;rams;conception;ésthétique;guide;"
+msgstr "dieter;rams;design;ésthétique;guide;"
 
 #: src/MainWindow.vala:46
 msgid "Load a random principle"
@@ -106,13 +106,13 @@ msgid ""
 msgstr ""
 "Les possibilités d'innovation ne sont en aucun cas épuisées. Le "
 "développement technologique offre toujours de nouvelles opportunités pour "
-"une conception innovante. Mais la conception innovante se développe toujours "
+"un design innovant. Mais le design innovant se développe toujours "
 "en tandem avec les technologies innovantes, et ne peut jamais être une fin "
 "en soi."
 
 #: src/Content.vala:34
 msgid "Good design makes a product useful"
-msgstr "Une bonne conception rend un produit utile"
+msgstr "Un bon design rend un produit utile"
 
 #: src/Content.vala:35
 msgid ""
@@ -123,13 +123,13 @@ msgid ""
 msgstr ""
 "Un produit est acheté pour être utilisé. Il doit répondre à certains "
 "critères, non seulement fonctionnels, mais aussi psychologiques et "
-"esthétiques. Une bonne conception met l'accent sur l'utilité d'un produit "
+"esthétiques. Un bon design met l'accent sur l'utilité d'un produit "
 "tout en ne tenant pas compte de tout ce qui pourrait éventuellement lui "
 "nuire."
 
 #: src/Content.vala:38
 msgid "Good design is aesthetic"
-msgstr "Une bonne conception est ésthétique"
+msgstr "Un bon design est ésthétique"
 
 #: src/Content.vala:39
 msgid ""
@@ -143,7 +143,7 @@ msgstr ""
 
 #: src/Content.vala:42
 msgid "Good design makes a product understandable"
-msgstr "Une bonne conception rend un produit compréhensible"
+msgstr "Un bon design rend un produit compréhensible"
 
 #: src/Content.vala:43
 msgid ""
@@ -155,7 +155,7 @@ msgstr ""
 
 #: src/Content.vala:46
 msgid "Good design is unobtrusive"
-msgstr "Une bonne conception est discrète"
+msgstr "Un bon design est discret"
 
 #: src/Content.vala:47
 msgid ""
@@ -164,13 +164,13 @@ msgid ""
 "restrained, to leave room for the user’s self-expression."
 msgstr ""
 "Les produits qui remplissent une fonction sont comme des outils. Ce ne sont "
-"ni des objets décoratifs ni des œuvres d'art. Leur conception doit donc être "
+"ni des objets décoratifs ni des œuvres d'art. Leur design doit donc être "
 "à la fois neutre et sobre, afin de laisser à l'utilisateur la possibilité de "
 "s'exprimer."
 
 #: src/Content.vala:50
 msgid "Good design is honest"
-msgstr "Une bonne conception est honnête"
+msgstr "Un bon design est honnête"
 
 #: src/Content.vala:51
 msgid ""
@@ -178,26 +178,26 @@ msgid ""
 "really is. It does not attempt to manipulate the consumer with promises that "
 "cannot be kept."
 msgstr ""
-"ELle ne rend pas un produit plus innovateur, plus puissant ou plus précieux "
-"qu'il ne l'est réellement. Elle ne vise pas à manipuler le consommateur avec "
+"Il ne rend pas un produit plus innovateur, plus puissant ou plus précieux "
+"qu'il ne l'est réellement. Il ne vise pas à manipuler le consommateur avec "
 "des promesses qui ne peuvent être tenues."
 
 #: src/Content.vala:54
 msgid "Good design is long-lasting"
-msgstr "Une bonne conception est durable"
+msgstr "Un bon design est durable"
 
 #: src/Content.vala:55
 msgid ""
 "It avoids being fashionable and therefore never appears antiquated. Unlike "
 "fashionable design, it lasts many years—even in today’s throwaway society."
 msgstr ""
-"Elle évite d'être tendance et n'apparaît donc jamais désuete. Contrairement "
-"a une conception tendance, Elle dure de nombreuses années, même dans la "
+"Il évite d'être tendance et n'apparaît donc jamais désuet. Contrairement "
+"a un design tendance, il dure de nombreuses années, même dans la "
 "tendance actuelle du jetable."
 
 #: src/Content.vala:58
 msgid "Good design is thorough down to the last detail"
-msgstr "Une bonne conception est travaillée jusque dans les moindres détails"
+msgstr "Un bon design est travaillé jusque dans les moindres détails"
 
 #: src/Content.vala:59
 msgid ""
@@ -209,7 +209,7 @@ msgstr ""
 
 #: src/Content.vala:62
 msgid "Good design is environmentally-friendly"
-msgstr "Une bonne conception s'intègre dans son environnement"
+msgstr "Un bon design s'intègre dans son environnement"
 
 #: src/Content.vala:63
 msgid ""
@@ -217,13 +217,13 @@ msgid ""
 "environment. It conserves resources and minimizes physical and visual "
 "pollution throughout the lifecycle of the product."
 msgstr ""
-"La conception apporte une contribution importante à la préservation de "
-"l'environnement. Elle préserve les ressources et minimise la pollution "
+"Le design apporte une contribution importante à la préservation de "
+"l'environnement. Il préserve les ressources et minimise la pollution "
 "physique et visuelle tout au long du cycle de vie du produit."
 
 #: src/Content.vala:66
 msgid "Good design is as little design as possible"
-msgstr "Une bonne conception est la plus légère possible"
+msgstr "Un bon design est le plus léger possible"
 
 #: src/Content.vala:67
 msgid ""
@@ -231,6 +231,6 @@ msgid ""
 "products are not burdened with non-essentials. Back to purity, back to "
 "simplicity."
 msgstr ""
-"Moins, mais mieux - parce qu'elle se concentre sur les aspects essentiels et "
+"Moins, mais mieux - parce qu'il se concentre sur les aspects essentiels et "
 "que les produits ne sont pas surchargés avec ce qui n'est pas essentiel. "
 "Retour à la pureté, retour à la simplicité."
