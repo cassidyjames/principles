@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -66,7 +66,11 @@ public class MainWindow : Gtk.Window {
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/com/github/cassidyjames/principles/Application.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        Gtk.StyleContext.add_provider_for_screen (
+            Gdk.Screen.get_default (),
+            provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        );
 
         mode_switch.notify["active"].connect (() => {
             if (gtk_settings.gtk_application_prefer_dark_theme) {
@@ -115,4 +119,3 @@ public class MainWindow : Gtk.Window {
         return base.configure_event (event);
     }
 }
-

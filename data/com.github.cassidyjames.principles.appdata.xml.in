@@ -35,6 +35,12 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.2.3" date="2020-02-17" urgency="medium">
+      <description>
+        <p>Code cleanup and organization</p>
+        <p>Updated French translations thanks to Nathan Bonnemains</p>
+      </description>
+    </release>
     <release version="1.2.2" date="2019-01-29" urgency="critical">
       <description>
         <p>Fix runtime crash due to incorrect schema</p>
@@ -122,4 +128,3 @@
     <value key="x-appcenter-suggested-price">2</value>
   </custom>
 </component>
-

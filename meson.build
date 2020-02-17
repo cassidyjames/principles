@@ -1,4 +1,8 @@
-project ('com.github.cassidyjames.principles', 'vala', 'c')
+project (
+    'com.github.cassidyjames.principles',
+    'vala', 'c',
+    version: '1.2.3'
+)
 
 gnome = import ('gnome')
 i18n = import('i18n')
@@ -29,4 +33,3 @@ subdir ('data')
 subdir ('po')
 
 meson.add_install_script('meson/post_install.py')
-

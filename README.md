@@ -83,4 +83,3 @@ Principles is made for elementary OS, but may have been built and made available
 -----
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.cassidyjames.principles)
-
