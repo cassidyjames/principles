@@ -1,3 +1,14 @@
+com.github.cassidyjames.principles (1.2.3) precise; urgency=medium
+
+  * Release 1.2.3 (#31)
+  * Update .travis.yml
+  * Downgrade Node.js to fix builds on Travis CI (#30)
+  * Update README.md (#29)
+  * Update fr.po (#28)
+  * Fix icon in README
+
+ -- Cassidy James Blaede <c@ssidyjam.es>  Mon, 17 Feb 2020 23:10:39 +0000
+
 com.github.cassidyjames.principles (1.0.0) precise; urgency=low
 
   * Initial Release.
