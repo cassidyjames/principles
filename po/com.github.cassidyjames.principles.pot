@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.principles\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-29 18:32-0700\n"
+"POT-Creation-Date: 2020-02-17 23:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,65 @@ msgstr ""
 msgid "Set to automatically start in System Settings → Applications → Startup"
 msgstr ""
 
-#: data/com.github.cassidyjames.principles.appdata.xml.in:112
+#: data/com.github.cassidyjames.principles.appdata.xml.in:40
+msgid "Code cleanup and organization"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:41
+msgid "Updated French translations thanks to Nathan Bonnemains"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:46
+msgid "Fix runtime crash due to incorrect schema"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:51
+msgid "Under-the-hood AppStream data fixes"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:56
+msgid ""
+"Principles is now translatable and has been translated to French (thanks, "
+"@NathanBnm!)"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:61
+msgid "Happy new year! This release contains AppData fixes."
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:66
+msgid "Hello, Juno."
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:68
+msgid "Split packaging out"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:69
+msgid "Build for Juno"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:75
+msgid "Post-release tweaking"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:77
+msgid "Added animations"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:78
+msgid "Tweaked punctuation"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:79
+msgid "Under-the-hood improvements"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:85
+msgid "Initial release"
+msgstr ""
+
+#: data/com.github.cassidyjames.principles.appdata.xml.in:118
 msgid "Cassidy James Blaede"
 msgstr ""
 
