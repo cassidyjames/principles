@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -102,8 +102,8 @@ public class ContentStack : Gtk.Stack {
             grid.column_spacing = grid.row_spacing = 12;
             grid.halign = Gtk.Align.CENTER;
 
-            grid.attach (number,      0, 0, 1, 2);
-            grid.attach (title,       1, 0);
+            grid.attach (number, 0, 0, 1, 2);
+            grid.attach (title, 1, 0);
             grid.attach (description, 1, 1);
 
             add_named (grid, i.to_string ());
@@ -115,4 +115,3 @@ public class ContentStack : Gtk.Stack {
         visible_child_name = rand.to_string ();
     }
 }
-
