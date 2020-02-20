@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/cassidyjames/principles.svg?branch=master)](https://travis-ci.org/cassidyjames/principles)
 
 <p align="center">
-  <img src="https://cdn.rawgit.com/cassidyjames/principles/1376a373d81a05cc6c88562feafb96aa02009872/data/icons/128/com.github.cassidyjames.principles.svg" alt="Icon" />
+  <img src="data/icons/128.svg" alt="Icon" />
 </p>
 <h1 align="center">Principles</h1>
 <p align="center">
@@ -46,14 +46,16 @@ Principles is designed and developed on and for [elementary OS](https://elementa
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.cassidyjames.principles)
 
+Versions of Principles may have been built and made available elsewhere by third-parties. These builds may have modifications or changes and **are not provided nor supported by me**. The only supported version is distributed via AppCenter on elementary OS.
 
 ## Developing and Building
 
-If you want to hack on and build Palette yourself, you'll need the following dependencies:
+If you want to hack on and build Principles yourself, you'll need the following dependencies:
 
 * libgtk-3-dev
 * meson
 * valac
+* libgranite-dev
 
 Run `meson build` to configure the build environment and run `ninja test` to build and run automated tests
 
@@ -81,4 +83,3 @@ Principles is made for elementary OS, but may have been built and made available
 -----
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.cassidyjames.principles)
-

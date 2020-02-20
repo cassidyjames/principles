@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -23,12 +23,24 @@ public class Principles : Gtk.Application {
     public static GLib.Settings settings;
 
     public Principles () {
-        Object (application_id: "com.github.cassidyjames.principles",
-        flags: ApplicationFlags.FLAGS_NONE);
+        Object (
+            application_id: "com.github.cassidyjames.principles",
+            flags: ApplicationFlags.FLAGS_NONE
+        );
+    }
+
+    public static Principles _instance = null;
+    public static Principles instance {
+        get {
+            if (_instance == null) {
+                _instance = new Principles ();
+            }
+            return _instance;
+        }
     }
 
     static construct {
-        settings = new Settings ("com.github.cassidyjames.principles");
+        settings = new Settings (Principles.instance.application_id);
     }
 
     protected override void activate () {
@@ -42,7 +54,7 @@ public class Principles : Gtk.Application {
         var window_x = settings.get_int ("window-x");
         var window_y = settings.get_int ("window-y");
 
-        if (window_x != -1 ||  window_y != -1) {
+        if (window_x != -1 || window_y != -1) {
             main_window.move (window_x, window_y);
         }
 
@@ -67,4 +79,3 @@ public class Principles : Gtk.Application {
         return app.run (args);
     }
 }
-

@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -27,44 +27,44 @@ public class ContentStack : Gtk.Stack {
 
     static Content[] content = {
         Content () {
-            title = "Good design is innovative",
-            description = "The possibilities for innovation are not, by any means, exhausted. Technological development is always offering new opportunities for innovative design. But innovative design always develops in tandem with innovative technology, and can never be an end in itself."
+            title = _("Good design is innovative"),
+            description = _("The possibilities for innovation are not, by any means, exhausted. Technological development is always offering new opportunities for innovative design. But innovative design always develops in tandem with innovative technology, and can never be an end in itself.")
         },
         Content () {
-            title = "Good design makes a product useful",
-            description = "A product is bought to be used. It has to satisfy certain criteria, not only functional, but also psychological and aesthetic. Good design emphasizes the usefulness of a product whilst disregarding anything that could possibly detract from it."
+            title = _("Good design makes a product useful"),
+            description = _("A product is bought to be used. It has to satisfy certain criteria, not only functional, but also psychological and aesthetic. Good design emphasizes the usefulness of a product whilst disregarding anything that could possibly detract from it.")
         },
         Content () {
-            title = "Good design is aesthetic",
-            description = "The aesthetic quality of a product is integral to its usefulness because products we use every day affect our person and our well-being. But only well-executed objects can be beautiful."
+            title = _("Good design is aesthetic"),
+            description = _("The aesthetic quality of a product is integral to its usefulness because products we use every day affect our person and our well-being. But only well-executed objects can be beautiful.")
         },
         Content () {
-            title = "Good design makes a product understandable",
-            description = "It clarifies the product’s structure. Better still, it can make the product talk. At best, it is self-explanatory."
+            title = _("Good design makes a product understandable"),
+            description = _("It clarifies the product’s structure. Better still, it can make the product talk. At best, it is self-explanatory.")
         },
         Content () {
-            title = "Good design is unobtrusive",
-            description = "Products fulfilling a purpose are like tools. They are neither decorative objects nor works of art. Their design should therefore be both neutral and restrained, to leave room for the user’s self-expression."
+            title = _("Good design is unobtrusive"),
+            description = _("Products fulfilling a purpose are like tools. They are neither decorative objects nor works of art. Their design should therefore be both neutral and restrained, to leave room for the user’s self-expression.")
         },
         Content () {
-            title = "Good design is honest",
-            description = "It does not make a product more innovative, powerful or valuable than it really is. It does not attempt to manipulate the consumer with promises that cannot be kept."
+            title = _("Good design is honest"),
+            description = _("It does not make a product more innovative, powerful or valuable than it really is. It does not attempt to manipulate the consumer with promises that cannot be kept.")
         },
         Content () {
-            title = "Good design is long-lasting",
-            description = "It avoids being fashionable and therefore never appears antiquated. Unlike fashionable design, it lasts many years—even in today’s throwaway society."
+            title = _("Good design is long-lasting"),
+            description = _("It avoids being fashionable and therefore never appears antiquated. Unlike fashionable design, it lasts many years—even in today’s throwaway society.")
         },
         Content () {
-            title = "Good design is thorough down to the last detail",
-            description = "Nothing must be arbitrary or left to chance. Care and accuracy in the design process show respect towards the user."
+            title = _("Good design is thorough down to the last detail"),
+            description = _("Nothing must be arbitrary or left to chance. Care and accuracy in the design process show respect towards the user.")
         },
         Content () {
-            title = "Good design is environmentally-friendly",
-            description = "Design makes an important contribution to the preservation of the environment. It conserves resources and minimizes physical and visual pollution throughout the lifecycle of the product."
+            title = _("Good design is environmentally-friendly"),
+            description = _("Design makes an important contribution to the preservation of the environment. It conserves resources and minimizes physical and visual pollution throughout the lifecycle of the product.")
         },
         Content () {
-            title = "Good design is as little design as possible",
-            description = "Less, but better—because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity."
+            title = _("Good design is as little design as possible"),
+            description = _("Less, but better—because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity.")
         }
     };
 
@@ -102,8 +102,8 @@ public class ContentStack : Gtk.Stack {
             grid.column_spacing = grid.row_spacing = 12;
             grid.halign = Gtk.Align.CENTER;
 
-            grid.attach (number,      0, 0, 1, 2);
-            grid.attach (title,       1, 0);
+            grid.attach (number, 0, 0, 1, 2);
+            grid.attach (title, 1, 0);
             grid.attach (description, 1, 1);
 
             add_named (grid, i.to_string ());
@@ -115,4 +115,3 @@ public class ContentStack : Gtk.Stack {
         visible_child_name = rand.to_string ();
     }
 }
-
