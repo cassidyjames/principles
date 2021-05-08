@@ -31,6 +31,15 @@ public class MainWindow : Gtk.Window {
             title: _("Principles"),
             window_position: Gtk.WindowPosition.CENTER
         );
+        
+        // Handle dragging the entire widget
+        button_press_event.connect ((e) => {
+            if (e.button == Gdk.BUTTON_PRIMARY) {
+                begin_move_drag ((int) e.button, (int) e.x_root, (int) e.y_root, e.time);
+                return true;
+            }
+            return false;
+        });
     }
 
     construct {
