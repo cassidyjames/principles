@@ -96,6 +96,22 @@ public class MainWindow : Gtk.Window {
         stack.realize.connect (() => {
            randomize_principle (stack, true);
         });
+
+        enter_notify_event.connect ((event) => {
+            if (event.window == this.get_window ()) {
+                critical ("Enter");
+                context.remove_class ("transparent");
+            }
+            return false;
+        });
+
+        leave_notify_event.connect ((event) => {
+            if (event.window == this.get_window ()) {
+                critical ("Leave");
+                context.add_class ("transparent");
+            }
+            return false;
+        });
     }
 
     private void randomize_principle (ContentStack stack, bool allow_current = false) {
