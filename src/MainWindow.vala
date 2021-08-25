@@ -1,5 +1,5 @@
 /*
-* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2021 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -19,7 +19,7 @@
 * Authored by: Cassidy James Blaede <c@ssidyjam.es>
 */
 
-public class MainWindow : Gtk.Window {
+public class MainWindow : Hdy.Window {
     private ContentStack stack;
 
     public MainWindow (Gtk.Application application) {
@@ -33,14 +33,11 @@ public class MainWindow : Gtk.Window {
         );
     }
 
-    construct {
-        var header = new Gtk.HeaderBar ();
-        header.show_close_button = true;
-        var header_context = header.get_style_context ();
-        header_context.add_class ("titlebar");
-        header_context.add_class ("default-decoration");
-        header_context.add_class (Gtk.STYLE_CLASS_FLAT);
+    static construct {
+        Hdy.init ();
+    }
 
+    construct {
         var randomize_button = new Gtk.Button.from_icon_name ("media-playlist-shuffle-symbolic");
         randomize_button.margin_end = 12;
         randomize_button.tooltip_text = _("Load a random principle");
@@ -61,8 +58,7 @@ public class MainWindow : Gtk.Window {
 
         var context = get_style_context ();
         context.add_class ("principles");
-        context.add_class ("rounded");
-        context.add_class ("flat");
+        context.add_class (Gtk.STYLE_CLASS_FLAT);
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/com/github/cassidyjames/principles/Application.css");
@@ -84,14 +80,28 @@ public class MainWindow : Gtk.Window {
 
         Principles.settings.bind ("dark", mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
+        var header = new Hdy.HeaderBar () {
+            has_subtitle = false,
+            show_close_button = true,
+            title = _("Principles")
+        };
         header.pack_end (mode_switch);
         header.pack_end (randomize_button);
 
-        set_titlebar (header);
+        var header_context = header.get_style_context ();
+        header_context.add_class ("default-decoration");
+        header_context.add_class (Gtk.STYLE_CLASS_FLAT);
+
+        var grid = new Gtk.Grid () {
+            orientation = Gtk.Orientation.VERTICAL
+        };
+        grid.add (header);
+        grid.add (stack);
+
         set_keep_below (true);
         stick ();
 
-        add (stack);
+        add (grid);
 
         stack.realize.connect (() => {
            randomize_principle (stack, true);

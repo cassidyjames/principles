@@ -1,5 +1,5 @@
 /*
-* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2021 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -70,6 +70,7 @@ public class ContentStack : Gtk.Stack {
 
     public ContentStack () {
         Object (
+            border_width: 6,
             margin_bottom: 24,
             transition_type: Gtk.StackTransitionType.CROSSFADE
         );
@@ -85,14 +86,14 @@ public class ContentStack : Gtk.Stack {
             number.get_style_context ().add_class ("principle-number");
 
             var title = new Gtk.Label (principle.title);
-            title.max_width_chars = 28;
+            title.max_width_chars = 22;
             title.valign = Gtk.Align.END;
             title.wrap = true;
             title.xalign = 0;
             title.get_style_context ().add_class ("principle-title");
 
             var description = new Gtk.Label (principle.description);
-            description.max_width_chars = 40;
+            description.max_width_chars = 36;
             description.wrap = true;
             description.valign = Gtk.Align.START;
             description.xalign = 0;
