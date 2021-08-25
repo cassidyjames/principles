@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2018 Cassidy James Blaede <c@ssidyjam.es> -->
+<!-- Copyright 2018–2021 Cassidy James Blaede <c@ssidyjam.es> -->
 <component type="desktop">
   <id>com.github.cassidyjames.principles</id>
   <metadata_license>CC0</metadata_license>
@@ -27,14 +27,13 @@
     <screenshot>
       <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot-dark.png</image>
     </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot-wallpaper.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/principles/master/data/screenshot-wallpaper-dark.png</image>
-    </screenshot>
   </screenshots>
   <releases>
+    <release version="2.0.0" date="2021-08-24" urgency="medium">
+      <description>
+        <p>Hello, Odin</p>
+      </description>
+    </release>
     <release version="1.2.3" date="2020-02-17" urgency="medium">
       <description>
         <p>Code cleanup and organization</p>
@@ -116,7 +115,7 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <developer_name>Cassidy James Blaede</developer_name>
-  <url type="homepage">https://github.com/cassidyjames/principles</url>
+  <url type="homepage">https://cassidyjames.com</url>
   <url type="bugtracker">https://github.com/cassidyjames/principles/issues</url>
   <url type="translate">https://github.com/cassidyjames/principles/tree/master/po#readme</url>
   <url type="donation">https://cassidyjames.com/pay</url>
