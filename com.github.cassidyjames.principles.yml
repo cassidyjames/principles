@@ -1,0 +1,15 @@
+app-id: com.github.cassidyjames.principles
+runtime: io.elementary.Platform
+runtime-version: '6'
+sdk: io.elementary.Sdk
+command: com.github.cassidyjames.principles
+finish-args:
+  - '--share=ipc'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+modules:
+  - name: principles
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .

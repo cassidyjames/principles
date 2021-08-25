@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/cassidyjames/principles.svg?branch=master)](https://travis-ci.org/cassidyjames/principles)
-
 <p align="center">
   <img src="data/icons/128.svg" alt="Icon" />
 </p>
@@ -11,7 +9,6 @@
 | ![Screenshot](data/screenshot.png)           | ![Screenshot](data/screenshot-dark.png)           |
 | -------------------------------------------- | ------------------------------------------------- |
 | ![Screenshot](data/screenshot-wallpaper.png) | ![Screenshot](data/screenshot-wallpaper-dark.png) |
-
 
 ## Remember Dieter Rams' ten principles of good design
 
@@ -39,7 +36,6 @@ According to Rams, good design:
 
 Get a simple reminder of one of these principles each time you open the app.
 
-
 ## Made for [elementary OS](https://elementary.io)
 
 Principles is designed and developed on and for [elementary OS](https://elementary.io). Purchasing through AppCenter directly supports the development and ensures instant updates straight from me. Get it on AppCenter for the best experience.
@@ -52,10 +48,10 @@ Versions of Principles may have been built and made available elsewhere by third
 
 If you want to hack on and build Principles yourself, you'll need the following dependencies:
 
-* libgtk-3-dev
-* meson
-* valac
-* libgranite-dev
+- libgtk-3-dev
+- meson
+- valac
+- libgranite-dev
 
 Run `meson build` to configure the build environment and run `ninja test` to build and run automated tests
 
@@ -68,17 +64,14 @@ To install, use `ninja install`, then execute with `com.github.cassidyjames.prin
     sudo ninja install
     com.github.cassidyjames.principles
 
-
 ## Other Platforms
 
 Principles is made for elementary OS, but may have been built and made available elsewhere by community members. These builds may have modifications or changes and **are not provided or supported by me**.
-
 
 ## Special Thanks
 
 - [Micah Ilbery](https://github.com/micahilbery) for the shiny icons
 - [Daniel Foré](https://github.com/danrabbit) for his apps to use as code examples
-
 
 -----
 
